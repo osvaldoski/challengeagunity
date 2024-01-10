@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <script> var exports = {}; </script>
+    <script src="ts-built/index.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="search-div">
+            <h1>Weather information</h1>
+            <p>Search your place</p>
+            <div style="text-align: center;">
+                <input value="" id="name" class="form-input" placeholder="Write any city">
+                <button onclick="searchPlace()" class="form-button">Search</button>
+            </div>
+            <div id="listPlaces"></div>
+        </div>
+
+        <div class="weather-div weather-div hiddenWeather" id="displayWeather">
+            <div class="weatherContainer">
+
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Name:</p>
+                    <p id="weatherName"></p>
+                </div>
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Country:</p>
+                    <p id="weatherCountry"></p>
+                </div>
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Temperature:</p>
+                    <p id="weatherTemperature"></p>
+                </div>
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Feels like:</p>
+                    <p id="weatherFeelsLike"></p>
+                </div>
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Minimum temperature:</p>
+                    <p id="weatherMinimumTemperature"></p>
+                </div>
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Maximum temperature:</p>
+                    <p id="weatherMaximumTemperature"></p>
+                </div>
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Description:</p>
+                    <p id="weatherDescription"></p>
+                </div>
+                <div class="weatherItem">
+                    <p class="weatherItemTitle">Humidity:</p>
+                    <p id="weatherHumidity"></p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
